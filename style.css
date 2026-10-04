@@ -544,7 +544,7 @@ header {
     font-family: var(--font-family-body);
     font-weight: var(--font-weight-regular);
     font-size: var(--size-18);
-    color: var(--blue-300);
+    color: var(--blue-500);
     margin-bottom: var(--size-32);
 }
 
@@ -1108,7 +1108,7 @@ header {
     font-family: var(--font-family-body);
     font-weight: var(--font-weight-regular);
     font-size: var(--size-16);
-    color: var(--blue-300);
+    color: var(--blue-500);
     margin-bottom: var(--size-32);
 }
 .portfolio-section-container {
