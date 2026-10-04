@@ -435,7 +435,7 @@ header {
     font-family: var(--font-family-body);
     font-weight: var(--font-weight-regular);
     font-size: var(--size-24);
-    color: var(--blue-300);
+    color: var(--blue-500);
     text-align: center;
     margin: var(--size-16) var(--size-16) var(--size-72);
 }
@@ -571,7 +571,7 @@ header {
   justify-content: space-between;
   gap: var(--size-8);
   width: 100%;
-  height: 320px
+  height: 375px
 }
 
 .slides-wrapper {
@@ -583,7 +583,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
 }
 
 /* Hide all slides by default */
@@ -683,6 +683,454 @@ header {
 }
 
 
+
+@media (max-width: 1200px) {
+  .showcase {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-32);
+    width: 100%;
+  }
+
+  .showcase-top-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--size-32);
+    width: 100%;
+  }
+
+  .showcase-top-row .showcase-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-16);
+  }
+
+  .showcase-top-row .NBC-static-showcase {
+    width: 320px; 
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .showcase-top-row .NBC-static-showcase img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    width: 300px
+  }
+
+  .showcase .carousels-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: var(--size-24);
+    width: 100%;
+  }
+
+  .showcase .carousel-container {
+    flex: 1;
+    max-width: 100%;
+  }
+}
+
+
+/* === ember & bean === */
+
+.project-header-tan {
+    font-family: var(--font-family-body);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--size-24);
+    color: var(--tan-500);
+    margin: 20px var(--size-32);
+}
+
+.project-description-tan {
+    font-family: var(--font-family-body);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--size-18);
+    color: var(--tan-500);
+    margin: var(--size-32);
+}
+
+.second-showcase {
+    display: flex;
+    gap: var(--size-32);
+    width: 100%;
+    padding: var(--size-48);
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.ember-bean-card {
+  display: flex;
+  flex-direction: column; /* Stacks top 50/50 row and bottom full-width row */
+  gap: var(--size-32);
+  width: 100%;
+  background-color: var(--tan-100);
+  padding: var(--size-32);
+  border-radius: var(--size-8);
+}
+
+.ember-bean-top-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: var(--size-32);
+  width: 100%;
+}
+
+.ember-bean-top-row .ember-bean-logo-wrapper {
+  flex: 1 1 0;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ember-bean-top-row .ember-bean-text-wrapper {
+  flex: 1 1 0;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.ember-bean-bottom-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: var(--size-48);
+}
+
+
+
+.ember-bean-products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--size-32);
+    margin-top: var(--size-32);
+}
+
+
+
+.ember-bean-product {
+    flex: 1;
+    width: 100%;
+    max-width: 200px; 
+    height: auto;
+    object-fit: contain;
+    align-self: center;
+}
+
+.ember-bean-media-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 150px;
+  width: 100%;
+  max-width: fit-content;
+  margin: var(--size-16) auto 0 auto;
+}
+
+.ember-bean-packages {
+  display: flex;
+  gap: var(--size-8);
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.ember-bean-packages .ember-bean-product {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Tan Carousel overrides */
+#ember-carousel {
+  flex: 1; 
+  width: 100%;
+  max-width: 375px;
+  margin: 0 auto;
+}
+
+.carousel-tan .carousel-caption {
+  color: var(--tan-500);
+  border-color: var(--tan-500);
+}
+
+.carousel-tan .dot {
+  background-color: var(--tan-200);
+}
+
+.carousel-tan .dot.active {
+  background-color: var(--tan-500);
+}
+
+.carousel-tan .carousel-arrow {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: var(--size-8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--tan-300);
+    transition: color 0.2s ease-in-out;
+    height: var(--size-48);
+}
+
+.carousel-tan .carousel-arrow:hover {
+  color: var(--tan-500);
+}
+
+#ember-carousel .carousel-stage {
+  width: 100%;
+  height: auto;
+}
+
+#ember-carousel .carousel-slide {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain; 
+}
+
+.ember-bean-full-width {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: var(--size-32);
+}
+
+.ember-menu {
+  width: 100%;
+  max-width: 750px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+
+    .ember-bean-bottom-row {
+        width: 48%;
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+        gap: var(--size-24);
+    }
+    .ember-bean-top-row {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: var(--size-32);
+        width: 100%;
+    }
+
+    .project-header-tan {
+    font-family: var(--font-family-body);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--size-24);
+    color: var(--tan-500);
+    margin: 5px var(--size-32);
+    }
+}
+
+
+
+/* === daily brew === */
+
+.daily-brew-container {
+    display: flex;
+    flex-direction: row;
+    gap: var(--size-32);
+    width: 100%;
+    padding: var(--size-32);
+    align-items:flex-start;
+}
+
+.daily-brew-menu {
+  flex: 3 3 0;
+  gap: var(--size-72);
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.daily-brew-menu-image {
+  flex: 1 1 0;         /* Allows images to shrink evenly as space constricts */
+  width: 50%;
+  max-width: 100%;     /* Prevents images from exceeding parent boundaries */
+  height: auto;
+  object-fit: contain;
+  padding-right: var(--size-48);
+}
+
+.daily-brew-container .showcase-text {
+  flex: 1 1 0;
+  width: 25%;
+  padding: var(--size-32);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 1100px) {
+
+  .daily-brew-container {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--size-24);
+  }
+
+  .daily-brew-menu {
+    width: 100%;
+    flex: 1 1 100%;
+    justify-content: center;
+    gap: var(--size-16);
+
+  }
+
+  .daily-brew-container .showcase-text {
+    width: 100%;
+    text-align: center;
+    flex: 1 1 100%;
+    padding-right: 0;
+  }
+
+  .daily-brew-menu img {
+    max-width: 48%;
+    max-width: 400px;
+    height: auto;
+  }
+}
+
+/* === lunch money === */
+
+.lunch-money-container {
+    display: flex;
+    flex-direction: row;
+    gap: var(--size-32);
+    width: 100%;
+    padding: var(--size-32);
+    align-items:flex-start;
+}
+
+.lunch-money-container .showcase-text {
+  flex: 1;
+  width: 25%;
+  padding: var(--size-32);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.lunch-money-container .project-header {
+  font-family: var(--font-family-body);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--size-48);
+  color: var(--blue-500);
+  margin-bottom: var(--size-16);
+}
+
+.lunch-money-container .project-description {
+  font-family: var(--font-family-body);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--size-18);
+  color: var(--blue-500);
+  margin-bottom: var(--size-32);
+}
+
+.lunch-money-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: var(--size-32);
+  margin-top: var(--size-32);
+  width: 100%;
+  max-height: 200px;
+}
+
+.lunch-money-icon img {
+  width: 80px;
+  height: auto;       
+  object-fit: contain;
+  transition: transform 0.2s ease-in-out;
+}
+
+.lunch-money-icon img:hover {
+  transform: scale(1.1);
+}
+
+
+
+/* === ipad mini, 768 x 1024 === */
+
+@media (max-width: 800px) {
+
+    .northern-companies-container {
+  display: flex;
+  align-items: stretch; 
+  gap: var(--size-32);
+}
+
+.showcase-text {
+  flex: 1;
+}
+
+.NBC-static-showcase {
+  flex: 1;
+  width: 100%;
+  height: 100%; /* Forces the image wrapper/element to fill the parent's height */
+  object-fit: cover; /* Crops the image proportionally to fill the space without distorting */
+}
+.project-description {
+    font-family: var(--font-family-body);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--size-16);
+    color: var(--blue-300);
+    margin-bottom: var(--size-32);
+}
+.portfolio-section-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Now carousels-wrapper sits below the text/poster block and takes full width */
+  .carousels-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: var(--size-32);
+    gap: var(--size-16);
+  }
+
+  .carousel-container {
+    flex: 1;
+    max-width: 48%; /* Keeps print and digital side-by-side filling the bottom half */
+  }
+}
 
 /* === Hero Section === */
 
